@@ -1,0 +1,61 @@
+body {
+    background: url(./images/desk.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.todocontainerwrapper {
+    background: url(./images/notepad.png);
+    margin: auto;
+    align-items: center;
+    min-height: 900px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position-y: -30pt;
+}
+
+.buttoncontainer {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.todoContainer {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 100px;
+    padding-left: 10px;
+}
+
+.testcontainer {
+    display: none;
+}
+
+.secondbuttoncontainer {
+    display: flex;
+    justify-content: center;
+}
+.labelWrapper {
+    background-color: rgb(230, 230, 230);
+    padding: 2pt;
+    border: solid 1pt black;
+}
+
+.userIdContainer {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 100px;
+    padding-left: 40px;
+
+}
+
+.thirdbuttoncontainer {
+    display: flex;
+    justify-content: center;
+}

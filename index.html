@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+
+
+
+  <br>
+  <main class=maincontainer>
+    <div class=buttoncontainer>
+        <button onclick="fetchTodos()">Fetch Todos</button>
+        <button onclick="logTodos()">Log Todos</button>
+        <button onclick="populateTodos()">Populate Todos</button>
+        <!--<button onclick="scanforCompleted()">Scan for Completed</button> -->
+        <button type="reset" onclick="ResetTodos()">Reset Todos</button>   
+    </div>
+
+    <div class="secondbuttoncontainer">
+        <div class="labelWrapper">
+          <label for="idNumber">Search for specific ID:</label><br>
+        </div>
+        <input type="text" id="idSearch" name="idSearch" value="" onkeyup="setIdSearch(this.value)" />
+        <button onclick="submitAndSearch()">Submit and search</button>
+    </div>
+
+    <div class="thirdbuttoncontainer">
+      <div class="labelWrapper">
+        <label for="filterCompleted">Filter for completed:</label><br>
+      </div>
+      <button onclick="filterForComplete()">Filter for Complete</button>
+      <button onclick="filterForIncomplete()">Filter for Incomplete</button>
+  </div>
+
+    <div class="todocontainerwrapper">
+      <div class="todoContainer">
+        <br>
+        <div class="allOlContainer">
+
+          <!--Todo-->
+            <ol id="todo-list">
+          
+            </ol>
+
+          <!-- This was a test to fetch other data than todo
+            <ol id="test-list">
+
+            </ol> -->
+
+          <!--Search-->
+            <ol id="specificUserId">
+
+            </ol>
+           <!--Filter-->
+           <ol id="filterComplete">
+
+           </ol>
+        </div>  
+      </div>
+    </div>
+  </main>
+  <div class="testcontainer">
+    <button onclick="fetchvariable()">Fetch Posts</button>
+    <button onclick="logthis()">Log This!</button>
+    <button onclick="testpopulate()">Test Populate</button>
+  </div>
+  <br>
+</body>
+</html>
